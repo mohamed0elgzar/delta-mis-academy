@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DELTA MIS ACADEMY - منصة تعليمية تفاعلية لتعلم Python، SQL، تحليل البيانات، والحلول الرقمية للأعمال." />
+    <title>DELTA MIS ACADEMY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+      <div class="grid-overlay"></div>
+
+      <header class="site-header" id="top">
+        <nav class="nav container" aria-label="التنقل الرئيسي">
+          <a class="brand" href="index.html" aria-label="DELTA MIS ACADEMY">
+            <span class="brand-mark" aria-hidden="true">
+              <span></span>
+              <span></span>
+            </span>
+            <span class="brand-copy">
+              <strong>DELTA MIS</strong>
+              <small>ACADEMY</small>
+            </span>
+          </a>
+
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="فتح القائمة">
+            <span></span><span></span><span></span>
+          </button>
+
+          <div class="nav-menu" id="nav-menu">
+            <a href="#top">الرئيسية</a>
+            <a href="#python">أكاديمية Python</a>
+            <a href="#data">علم البيانات</a>
+            <a href="#database">قواعد البيانات</a>
+            <a href="#projects">المشاريع</a>
+            <a href="#about">عن المنصة</a>
+          </div>
+
+          <div class="nav-actions">
+            <a class="search-chip" href="python-lessons.html#lessons" aria-label="بحث عن دروس">
+              <span>بحث</span>
+            </a>
+            <a class="button primary" href="python-lessons.html">ابدأ التعلم</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero section">
+          <div class="hero-bg-glow"></div>
+          <div class="hero-content container">
+            <div class="hero-copy reveal">
+              <p class="eyebrow">DELTA HIGHER INSTITUTE • MIS DEPARTMENT</p>
+              <h1>
+                <span>مستقبلك يبدأ</span>
+                <span class="line-break">بسطر كود.</span>
+              </h1>
+              <p class="lead">اتعلم Python، افهم البيانات، وابني حلول تقنية لمشاكل الأعمال.</p>
+              <div class="cta-row">
+                <a class="button primary magnetic" href="python-lessons.html">ابدأ رحلة البرمجة</a>
+                <a class="button secondary" href="#python">استكشف المسارات</a>
+              </div>
+              <div class="hero-tags" aria-label="الموضوعات الأساسية">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Data Science</span>
+                <span>Business Intelligence</span>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal" aria-label="تصور فني لواجهة تعليمية">
+              <div class="visual-scene">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="code-fragment code-a">print("Hello, MIS")</div>
+                <div class="code-fragment code-b">df.groupby("city").sum()</div>
+                <div class="code-fragment code-c">SELECT * FROM students</div>
+                <div class="laptop-panel">
+                  <div class="screen-topbar">
+                    <span></span><span></span><span></span>
+                  </div>
+                  <div class="screen-body">
+                    <div class="code-window">
+                      <div class="window-lines">
+                        <span class="hl-key">def</span> <span class="hl-var">student_score</span>():
+                        <span class="ind">total =</span> <span class="hl-num">sum</span>([<span class="hl-num">91</span>, <span class="hl-num">88</span>, <span class="hl-num">94</span>])
+                        <span class="ind">return</span> <span class="hl-func">round</span>(total / <span class="hl-num">3</span>, <span class="hl-num">2</span>)
+                      </div>
+                    </div>
+                    <div class="stat-carve">
+                      <div>
+                        <strong>92%</strong>
+                        <span>تعلم متقدم</span>
+                      </div>
+                      <div class="mini-bars">
+                        <span></span><span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="keyboard"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-indicator" aria-label="الانتقال لأسفل الصفحة">
+            <span>Scroll</span>
+            <i></i>
+          </div>
+        </section>
+
+        <section class="stats-section container reveal">
+          <div class="stat-card">
+            <strong data-counter="10">0</strong>
+            <span>مراحل تعليمية</span>
+          </div>
+          <div class="stat-card">
+            <strong data-counter="24">0</strong>
+            <span>درساً عملياً</span>
+          </div>
+          <div class="stat-card">
+            <strong data-counter="6">0</strong>
+            <span>مشاريع تطبيقية</span>
+          </div>
+          <div class="stat-card">
+            <strong data-counter="100">0</strong>
+            <span>% تركيز على التطبيق</span>
+          </div>
+        </section>
+
+        <section class="path section" id="python">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow green">أكاديمية Python</p>
+              <h2>ابدأ من الصفر، وطبّق كل مفهوم بإيدك.</h2>
+            </div>
+
+            <div class="path-grid">
+              <article class="path-card reveal">
+                <div class="icon-box"><span>01</span></div>
+                <h3>أساسيات البرمجة</h3>
+                <p>تعرف على المتغيرات، أنواع البيانات، والتحكم في التدفق بطريقة واضحة ومباشرة.</p>
+                <a href="python-lessons.html#module-1">عرض المحتوى</a>
+              </article>
+              <article class="path-card reveal">
+                <div class="icon-box"><span>02</span></div>
+                <h3>البيانات وتحليلها</h3>
+                <p>تعلم ملفات CSV، تنظيف البيانات، والمهارات الأساسية في تحليل المعلومات.</p>
+                <a href="python-lessons.html#module-6">عرض المحتوى</a>
+              </article>
+              <article class="path-card reveal">
+                <div class="icon-box"><span>03</span></div>
+                <h3>الذكاء التجاري</h3>
+                <p>اربط بين Python والأنظمة، التقارير، ومؤشرات الأداء في بيئة الأعمال.</p>
+                <a href="data-science.html">استكشاف البيانات</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="module-showcase section" id="intel">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow green">خارطة التعلم</p>
+              <h2>من أساسيات البرمجة إلى تحليل البيانات وبناء حلول ذكية للأعمال.</h2>
+            </div>
+
+            <div class="module-list reveal">
+              <div class="module-item active">
+                <span>01</span>
+                <div>
+                  <strong>Python Foundations</strong>
+                  <small>أساسيات اللغة والمنطق</small>
+                </div>
+              </div>
+              <div class="module-item">
+                <span>02</span>
+                <div>
+                  <strong>Conditions & Loops</strong>
+                  <small>القرارات والتكرار</small>
+                </div>
+              </div>
+              <div class="module-item">
+                <span>03</span>
+                <div>
+                  <strong>Data Structures</strong>
+                  <small>القوائم والمجموعات والقواميس</small>
+                </div>
+              </div>
+              <div class="module-item">
+                <span>04</span>
+                <div>
+                  <strong>Functions & Data</strong>
+                  <small>إعادة الاستخدام ومعالجة البيانات</small>
+                </div>
+              </div>
+              <div class="module-item">
+                <span>05</span>
+                <div>
+                  <strong>Data Analysis</strong>
+                  <small>pandas، NumPy، والملفات</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="playground section" id="python-playground">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow green">بيئة ممارسة آمنة</p>
+              <h2>محرر Python تفاعلي</h2>
+            </div>
+
+            <div class="editor-shell reveal">
+              <div class="editor-toolbar">
+                <div class="window-dots"><span></span><span></span><span></span></div>
+                <div class="editor-actions">
+                  <button class="button small ghost" id="python-run">تشغيل</button>
+                  <button class="button small ghost" id="python-reset">إعادة تعيين</button>
+                </div>
+              </div>
+              <div class="editor-area">
+                <div class="line-numbers" id="lineNumbers" aria-hidden="true"></div>
+                <textarea id="pythonEditor" aria-label="محرر Python">print("Hello, MIS Students!")
+
+name = "Mohamed"
+print("Welcome", name)
+
+numbers = [10, 20, 30, 40]
+print("Total:", sum(numbers))</textarea>
+              </div>
+              <div class="console-panel">
+                <h3>الإخراج</h3>
+                <pre id="pythonOutput">انتظر... سيتم عرض النتيجة هنا.</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="data section" id="data">
+          <div class="container split-layout">
+            <div class="section-copy reveal">
+              <p class="eyebrow green">علم البيانات</p>
+              <h2>من البيانات إلى القرار.</h2>
+              <p>يفهم الطالب كيف تُستخدم الرسوم البيانية، المقاييس، والملفات لإيجاد الأنماط في معلومات الأعمال.</p>
+              <ul class="check-list">
+                <li>جمع البيانات وتنظيفها</li>
+                <li>مقارنة الأداء حسب الفئات</li>
+                <li>رسم البيانات باستخدام Python</li>
+                <li>توصيل النتائج إلى قرارات واقعية</li>
+              </ul>
+              <a class="button primary" href="data-science.html">استكشف لوحة المبيعات</a>
+            </div>
+
+            <div class="dashboard-preview reveal">
+              <div class="dashboard-head">
+                <span>Sales Dashboard</span>
+                <span>فصل 2025</span>
+              </div>
+              <div class="currency-row">
+                <div>
+                  <small>إجمالي المبيعات</small>
+                  <strong>₪ 168.4K</strong>
+                </div>
+                <div>
+                  <small>الزيادة</small>
+                  <strong class="up">+18.6%</strong>
+                </div>
+              </div>
+              <svg class="bars-svg" viewBox="0 0 380 180" aria-label="مخطط شريطي مبدئي">
+                <g>
+                  <rect x="20" y="115" width="26" height="55" rx="8" />
+                  <rect x="70" y="90" width="26" height="80" rx="8" />
+                  <rect x="120" y="72" width="26" height="98" rx="8" />
+                  <rect x="170" y="60" width="26" height="110" rx="8" />
+                  <rect x="220" y="48" width="26" height="122" rx="8" />
+                  <rect x="270" y="66" width="26" height="104" rx="8" />
+                  <rect x="320" y="44" width="26" height="126" rx="8" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="database section" id="database">
+          <div class="container split-layout reverse">
+            <div class="db-visual reveal">
+              <div class="db-layout">
+                <div class="db-card students">
+                  <h3>students</h3>
+                  <ul>
+                    <li><span>ID</span><small>PK</small></li>
+                    <li><span>name</span><small>varchar</small></li>
+                    <li><span>department</span><small>varchar</small></li>
+                  </ul>
+                </div>
+                <div class="db-card enrollments">
+                  <h3>enrollments</h3>
+                  <ul>
+                    <li><span>student_id</span><small>FK</small></li>
+                    <li><span>course_id</span><small>FK</small></li>
+                    <li><span>grade</span><small>int</small></li>
+                  </ul>
+                </div>
+                <div class="db-connection"></div>
+              </div>
+            </div>
+
+            <div class="section-copy reveal">
+              <p class="eyebrow green">قواعد البيانات</p>
+              <h2>أنظمة البيانات تدعم القرار.</h2>
+              <p>تعلم الجداول، العلاقات، ويُعدّ التنسيق الصحيح للبيانات أساس بناء الأنظمة الرقمية في MIS.</p>
+              <ul class="check-list">
+                <li>SELECT وWHERE وORDER BY</li>
+                <li>علاقات المفتاح الأساسي والأجنبي</li>
+                <li>الدوال التجميعية</li>
+                <li>J O I N في التطبيقات الحقيقية</li>
+              </ul>
+              <a class="button primary" href="databases.html">تجربة قاعدة البيانات</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="business section" id="projects">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="eyebrow green">المشاريع</p>
+              <h2>تطبيقات واقعية على أرض MIS.</h2>
+            </div>
+
+            <div class="project-grid reveal" id="projectGrid">
+              <article class="project-card" data-project="grades">
+                <div class="project-badge">Python</div>
+                <h3>Student Grades Analyzer</h3>
+                <p>تحليل درجات الطلاب وتصنيف الأداء وقياس التقدم الأكاديمي.</p>
+                <ul>
+                  <li>CSV</li>
+                  <li>pandas</li>
+                  <li>ملفات وتقرير</li>
+                </ul>
+                <button class="button ghost small project-open" data-project="grades">عرض المشروع</button>
+              </article>
+              <article class="project-card" data-project="sales">
+                <div class="project-badge">BI</div>
+                <h3>Sales Data Dashboard</h3>
+                <p>لوحة متابعة مبيعات شهرية مع مقارنة المنتجات والفئات.</p>
+                <ul>
+                  <li>Charts</li>
+                  <li>Insights</li>
+                  <li>Decision Support</li>
+                </ul>
+                <button class="button ghost small project-open" data-project="sales">عرض المشروع</button>
+              </article>
+              <article class="project-card" data-project="inventory">
+                <div class="project-badge">System</div>
+                <h3>Inventory Management</h3>
+                <p>تتبع المخزون، مستوى الطلب، وسجل التحديثات في نظام عملي.</p>
+                <ul>
+                  <li>SQLite</li>
+                  <li>CRUD</li>
+                  <li>Reports</li>
+                </ul>
+                <button class="button ghost small project-open" data-project="inventory">عرض المشروع</button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="quiz section" id="about">
+          <div class="container split-layout">
+            <div class="section-copy reveal">
+              <p class="eyebrow green">عن المنصة</p>
+              <h2>منصة تعليمية مبنية لتجعل البرمجة جزءًا من لغة ربط الطالب بالأعمال.</h2>
+              <p>DELTA MIS ACADEMY عبارة عن مشروع تعليمي تطبيقي مصمم للطلاب في قسم نظم المعلومات الإدارية، ويركّز على الربط بين Python، قواعد البيانات، تحليل البيانات، واحتياجات المؤسسات.</p>
+              <div class="mini-stats">
+                <div>
+                  <strong>2025</strong>
+                  <span>نسخة تعليمية</span>
+                </div>
+                <div>
+                  <strong>RTL</strong>
+                  <span>واجهة عربية</span>
+                </div>
+                <div>
+                  <strong>Local</strong>
+                  <span>حفظ محلي</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz-panel reveal" id="quizPanel">
+              <div class="quiz-header">
+                <h3>اختبار سريع</h3>
+                <span id="quizScore">0/5</span>
+              </div>
+              <div id="quizQuestions"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark" aria-hidden="true"><span></span><span></span></span>
+              <span class="brand-copy">
+                <strong>DELTA MIS</strong>
+                <small>ACADEMY</small>
+              </span>
+            </div>
+            <p>منصة تعليمية مستقلة تركز على تطوير مهارات البرمجة، تحليل البيانات، قواعد البيانات، والتفكير التحليلي في مجال نظم المعلومات الإدارية.</p>
+          </div>
+
+          <div>
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="python-lessons.html">Python Academy</a></li>
+              <li><a href="databases.html">قواعد البيانات</a></li>
+              <li><a href="projects.html">المشاريع</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>موارد learning</h4>
+            <ul>
+              <li><a href="python-lessons.html">دروس Python</a></li>
+              <li><a href="data-science.html">دروس تحليل البيانات</a></li>
+              <li><a href="business-systems.html">أنظمة الأعمال</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>ملاحظات</h4>
+            <p>هذا مشروع تعليمي مستقل ولا يملك صلة رسمية بالجامعة أو المؤسسة التعليمية.</p>
+            <a class="button small ghost" href="mailto:feedback@local.example">إرسال ملاحظة</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close="modal"></div>
+      <div class="modal-panel">
+        <button class="modal-close" aria-label="إغلاق">×</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
